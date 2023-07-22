@@ -9,7 +9,7 @@ export const Modal = ({ altImg, largeImg, onClose }) => {
       if (e.code === 'Escape') {
         onClose();
       }
-    }; // метод keyDown, при настанні події - натискання клавіші 'Escape' викликає функцію onClose() батьківського компоненнта
+    }; // функція keyDown, при настанні події - натискання клавіші 'Escape' викликає функцію onClose() батьківського компоненнта
     window.addEventListener('keydown', keyDown); // додаємо слухач натискання кнопок на клавіатурі
     return () => {
       window.removeEventListener('keydown', keyDown); // прибираємо слухач натискання кнопок на клавіатурі
